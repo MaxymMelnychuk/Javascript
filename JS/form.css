@@ -1,0 +1,161 @@
+* { 
+    
+    font-family: sans-serif; /*  style    */
+    margin: 0; /*  marges     */
+}
+
+
+body { /*  corps     */
+    width: 80%;
+    margin: 80px auto;
+    background-image: url(https://wallpapercave.com/wp/wp6088936.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+form { /*  container du inscription    */
+    margin-top: 20px;
+    border: 5px solid rgb(243, 243, 243);
+    border-radius: 15px;
+    width: 50%;
+    display: block;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 50px 10px rgba(255, 255, 255, 0.305);
+    
+}
+
+.inscription_title { /*  header du inscription     */
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 { /*    h1 personalisée   */
+    text-align: center;
+    color:white;
+   font-size: 1.5rem;
+   border: solid 3px rgba(54, 243, 246, 0.497);
+   background-color: rgba(127, 255, 212, 0.298);
+   border-radius: 50px;
+   width: 160px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+form > div { /*   div aura meme marges que form    */
+    margin: 30px 20px;
+}
+
+label { /*  label personalisée    */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input { /*   entrée de ce que on nous demande    */
+    height: 25px;
+    width: 40%;
+    border-radius: 50px;
+}
+
+.container_input { /*   container  dans quelle on va entrer les donees */
+    flex-direction: column;
+    display: flex;
+    gap: 30px;  /*  Espacement    */
+
+}
+
+button { /*  button personalisée     */
+    width: 150px;
+    margin-bottom: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border: solid 3px rgba(0, 255, 255, 0.318);
+    font-weight: 600;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(127, 255, 212, 0.295);
+    color: aliceblue;
+}
+
+button:hover { /*  changement couleur      */
+    background-color: rgba(0, 255, 255, 0.534);
+    border: solid 3px rgba(0, 255, 255, 0.658) ;
+    transition: 0.5s;
+}
+.message-error { /*   container de erreur    */
+    border: 1px solid rgba(212, 42, 0, 1);
+    color: rgb(212, 42, 0);
+    background-color: rgba(212, 42, 0, 0.4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.message-success { /*  Container de success     */
+    border: 1px solid rgb(81, 150, 2);
+    color: rgb(81, 150, 2);
+    background-color: rgba(113, 212, 0, 0.4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.success { /*  text quand on a reussi     */
+    border: 1px solid rgb(81, 150, 2);
+    background-color: rgba(113, 212, 0, 0.4);
+}
+ 
+.error { /*    input erreur   */
+    border: 1px solid rgb(150, 2, 2);
+    background-color: rgba(212, 0, 0, 0.4);
+}
+
+
+.message-error.visible { /*   erreur visible    */
+    display: block;
+    border-radius: 50px;
+}
+
+.message-success.visible { /* success visible      */
+    display: block;
+    border-radius: 50px;
+}
+
+#text_input { /*    text personalisée   */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: white;
+    border: solid 3px rgba(54, 243, 246, 0.497);
+   background-color: rgba(127, 255, 212, 0.298);
+   border-radius: 30px;
+   width: max-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+input { /* input bg      */
+    background-color: rgb(251, 245, 237);
+}
+
+.container_button { /*   container button   */
+    display: flex;
+    justify-content: center;
+}

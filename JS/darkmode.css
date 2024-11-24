@@ -1,0 +1,373 @@
+*:not(header) {  /* selectionner tt les elements   */
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif; /*  style text   */
+    
+}
+
+body { /*  corps du  text   */
+   
+    width: 100%; /*  largeur   */
+    height: 300vh; /*  hauteur   */
+
+}
+
+html, body {    /*  corps du html et body   */
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    
+}
+
+/*   apparaitre et disparaitre light et dark mode  */
+.disable, .disable2, .darkText, .lightText {
+    display: none;
+}
+
+.moon { /*   moon personalisée  */
+    display: flex;
+    width: 30px;
+    height: 30px;   
+    
+}
+
+.sun { /* sun personalisée    */
+   
+    width: 30px;
+    height: 30px;
+   display: none;
+    
+}
+
+/*  theme switch light and dark mode   */
+.darkmode #theme-switch .moon {
+    display: none;
+}
+
+/*   meme chose mais apparaitre  */
+.darkmode #theme-switch .sun {
+    display: block;
+}
+
+button { /*   button personalisée  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+   border-radius: 15px;
+   transition: background-color 0.5s ease;
+}
+
+button:hover { /*  animation   */
+    background-color: #adadad;
+}
+
+:root { /*  definir les variables globales, et de reutiliser les couleurs   */
+
+    --theme-dark1: #BEBEBF;
+    --theme-dark2: #D0D0D1;
+    --theme-dark3: #D4D6D7;
+    --theme-dark4: #DADADB;
+    --theme-dark5: #E6E7E8;
+    --theme-dark6: #EEEEEF;
+    --theme-dark7: #FAFBFC;
+
+    --bg-switch: #000000;
+ 
+    
+}
+
+.darkmode {
+
+    --theme-dark1: #323333;
+    --theme-dark2: #282929;
+    --theme-dark3: #232424;
+    --theme-dark4: #1B1C1C;
+    --theme-dark5: #141414;
+    --theme-dark6: #0d0c0c;
+    --theme-dark7: #000000;
+
+    --bg-switch: #ffffff;
+ 
+}
+
+
+.container1 { /*  container 1 personalisée   */
+    display: flex; /*  flexbox   */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-dark6); /*utilisation variable grace au root pour couleurs     */
+    color: var(--bg-switch); /*   meme chose pour text  */
+    transition: background-color 0.5s, color 0.5s;
+    height: 50em;
+    width: 100%;
+   
+}
+
+.container2, .container3, .container4 { /*   Animation pour containeur  */
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container2 { /*   meme chose pour autres containeur  */
+    background-color: var(--theme-dark7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 80vh;
+    color: var(--bg-switch);
+    overflow: hidden;
+   
+}
+
+.container3 {
+    background-color: var(--theme-dark6);
+    color: var(--bg-switch);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+   
+}
+
+.container4 {
+    background-color: var(--theme-dark7);
+    color: var(--bg-switch);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+   
+}
+
+h3 { /*   h3 personalisée  */
+    font-size: 1.7rem;
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+    animation: texts 1s ease-out forwards;
+}
+
+.where_use, .where_use2 {    /* Containeurs pour apparaitre et disparaitrevle texte du containeur 4    */
+    
+    font-size: 1.5rem;
+    margin-top: 5%;
+    animation: intro 1s ease-out forwards;
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+}
+
+.text_container2 {
+    width: 50%;
+    height: 30%; /*   taille  */
+    animation: intro 1s ease-out forwards; /* animation    */
+   
+   
+}
+
+.text_container3 {
+    animation: intro 1s ease-out forwards;
+}
+
+li { /* list item personalisée    */
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-left: 25px;
+   
+}
+
+
+a { /*   liens personalisée  */
+    display: flex;
+    text-decoration: none;
+    color: var(--bg-switch);
+    transition: color 0.5s;
+    font-size: 1.3rem;
+    text-align: center;
+    transition: color 0.5s ease;
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+    
+}
+
+a:hover { /*    animation de a */
+    color: #a2a2a2;
+}
+
+header { /*   haut du page personalisée  */
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--theme-dark5);
+    align-items: center;
+    justify-content: space-around;
+    transition: background-color 0.5s, color 0.5s;
+    position: fixed;
+    font-weight: 500; /*  style   */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 3;
+    
+}
+
+
+
+#title { /* Text accueil    */
+    font-size: calc(4.5vw + 1.2rem + 0.1rem);
+    justify-content: center;
+    text-align: center;
+    filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+    
+}
+
+.sizeP, .sizeH2, .sizeH22, li { /*  shadow   */
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+}
+
+.sizeP { /*   differents taille du text  */
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    
+}
+
+.sizeH2 { 
+    font-size: clamp(3rem, 5vw, 1rem);
+    
+}
+
+.sizeH22 {
+    font-size: clamp(3rem, 5vw, 1rem);
+    margin-bottom: 40px;
+    animation: intro 1s ease-out forwards;
+    
+}
+
+.big_sun { /*   icon soleil   */
+    max-width: 25%;
+    max-height: 40%;
+    min-height: 40px;
+    min-width: 40px;
+    animation: intro 1s ease-out forwards;
+}
+
+
+.big_moon { /*   moon personalisée  */
+    filter: drop-shadow(0px 4px 8px rgb(255, 255, 255));
+    max-width: 25%;
+    max-height: 40%;
+    min-height: 40px;
+    min-width: 40px;
+    animation: intro 1s ease-out forwards;
+    
+}
+
+.laptop_dark { /*    icon laptop pesonalisée  */
+    width: 35%;
+    height: 65%;
+    margin-top: 6%;
+    animation: texts 1s ease-out forwards;
+    margin-left: 5%;
+    
+}
+
+
+.laptop_light {
+    width: 35%;
+    height: 65%;
+    margin-left: 5%;
+    animation: texts 1s ease-out forwards;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+
+
+.text_container { /*  text container du container2   */
+    
+    flex-direction: column;
+    width: 50%;
+    height: 30%;
+    justify-content: center;
+    animation: texts 1s ease-out forwards;
+    
+}
+
+.text_container1 {
+    
+    flex-direction: column;
+    width: 50%;
+    height: 30%;
+    justify-content: center;
+    animation: texts 1s ease-out forwards;
+   
+}
+
+.text_container, .text_container1 {
+    margin-bottom: 7%;
+}
+
+footer { /*    bas du page */
+    background-color: var(--theme-dark6);
+    color: var(--bg-switch);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 1s ease;
+
+}
+
+.dark_hearth, .white_hearth { /* icones    */
+    width: auto;
+    height: 45%;
+    margin-left: 3%;
+}
+
+.white_hearth {
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+
+.thank { /*  filtre pour text du bas de page   */
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+   
+}
+
+
+#desck, #light, .sizeH2, .sizeP, h2, p {
+    animation: texts 1s ease-out forwards;
+}
+
+@media screen and (max-width: 768px) { /*  responsive   */
+    .big_sun, .big_moon {
+        display: none;
+    }
+
+    .text_container, .text_container1 {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@keyframes intro { /*  type animation   */
+    0% { 
+        transform: translateX(-30%); 
+        opacity: 0;
+    } 100% {
+        transform: translateX(0%); 
+        opacity: 1;
+    }
+}
+
+@keyframes texts { /*   pour text animation  */
+    0% {
+        transform: translateX(30%); 
+        opacity: 0;
+    } 100% {
+        transform: translateX(0%); 
+        opacity: 1;
+    }
+}
+
+

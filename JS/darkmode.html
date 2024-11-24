@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title> <!-- Nom du page    -->
+    <link rel="stylesheet" href="darkmode.css">
+</head>
+<body>
+    
+    <header> <!-- Header du page    -->
+        <a href="index.html">Tabs</a> <!--Liens vers dautres pages     -->
+        <a href="darkmode.html">Dark Mode</a>
+        <a href="checkbox.html">Formulaire</a>
+        <a href="combat.html">Sim de combat</a>
+        <button id="theme-switch"  > <!--  button de switch entre dark et light mode   -->
+            <img src="images_de_site\dark-moon.svg" alt="moon" class="moon">
+            <img src="images_de_site\sun.svg" alt="sun" class="sun">
+        </button>
+        
+    </header>
+
+    <main> <!--   Main content du page  -->
+        <div class="container1"> <!--1ere container du page     -->
+            <h1 id="title" class="titles">LIGHT MODE</h1>  <!-- text du container    -->
+        </div>
+
+        <div class="container2"> <!--2eme container    -->
+                    <!-- Images    -->
+                <img src="images_de_site\sun.svg" alt="" class="big_sun disable" >
+                <img src="images_de_site\white-moon.svg" alt="" class="big_moon disable2">
+                    <!--   differents container qui apparaisent et disparaisant  -->
+                <div class="lightText text_container1 "> <!--container avec text     -->
+                    <h2  class="sizeH2 " >What is Light Mode ?</h2><br>
+                    <p class="sizeP ">Light mode is the opposite of dark mode. It is the default display setting for many interfaces, where the background is light (typically white or light gray) and the text is dark (usually black or dark gray). Light mode is preferred for daytime use or well-lit environments, as it offers better readability in such conditions.</p>
+                </div>
+
+                <div class="darkText text_container ">
+                    <h2 class="sizeH2 " >What is Dark Mode? </h2><br>
+                    <p class="sizeP " >Dark mode is a display setting for user interfaces (UIs) where the background color is dark (typically black or dark gray), and the text is light (usually white or light gray). This mode is designed to reduce the amount of light emitted by the screen, making it easier on the eyes, especially in low-light environments.</p>
+                </div>
+               
+        </div>
+
+        <div class="container3">
+            <div class="lightText text_container2 "> <!--  Container avec avantages   -->
+                <h2 class="sizeH22">Advantages of Light Mode?</h2> <!--  text de avantages   -->
+                <ul> <!--    list avec avantages -->
+                    <li>Better visibility in bright daylight conditions</li>
+                    <li>Improved readability for small text</li>
+                    <li>Familiar design, comfortable for most users</li>
+                    <li>Versatility across various types of content and devices</li>
+                </ul>
+            </div>
+
+            <div class="darkText text_container3 "> <!-- Meme chose    -->
+                <h2 class="sizeH22">Advantages of Dark Mode?</h2>
+                <ul>
+                    <li>Redices eye strain in low-light environments</li>
+                    <li>Save energy on OLED and AMOLED screens</li>
+                    <li>Modern and sleek appearance, preferred by many users</li>
+                    <li>Enhances content focus, especially at night</li>
+                </ul>
+            </div> <!--  images avec changelents entre dark et light mode   -->
+            <img src="images_de_site\laptop-dark.svg" alt="" class="laptop_dark disable">
+            <img src="images_de_site\laptop-white.svg" alt="" class="laptop_light disable2">
+        </div>
+
+        <div class="container4"> <!-- meme chose    -->
+            <h2 class="sizeH22 disable">Where Light Mode is Used ?</h2>
+            <h2 class="sizeH22 disable2">Where Dark Mode is Used ?</h2>
+            <h3 class="changed disable">Light Mode is now supported by all popular apps and websites :</h3>
+            <h3 class="changed disable2">Dark Mode is now supported by all popular apps and websites :</h3>
+                
+                <div class="lightText where_use"> <!--Container avec text     -->
+                    <ul>
+                        <li>Social Networks : Instagram, Twitter, Facebook</li>
+                        <li>Operating Systems : iOS, Android, macOS</li>
+                        <li>Web Services : YouTube, Google, Discord</li>
+                    </ul>
+    
+                </div>
+
+                <div class="darkText where_use2">
+                    <ul>
+                        <li>Social Networks : Instagram, Twitter, Facebook</li>
+                        <li>Operating Systems : iOS, Android, macOS</li>
+                        <li>Web Services : YouTube, Google, Discord</li>
+                    </ul>
+    
+                </div>
+
+        </div>
+    </main>
+    
+    <footer> <!--    bas du page -->
+        <h1 class="thank">Thank for watching this page</h1>
+        <img src="images_de_site\dark-hearth.svg" alt="" class="dark_hearth disable"> <!--  light et dark mode et light  images   -->
+        <img src="images_de_site\white-hearth.svg" alt="" class="white_hearth disable2">
+    </footer>
+
+    <script defer src="darkmode.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+* { /* style pout tt le text  */
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+header { /* haut du page  */
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(198, 184, 165);
+    height: 8%;
+    align-items: center;
+
+    
+}
+
+a { /* lien personalisée  */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    transition: color 0.5s ease;
+    
+}
+ 
+a:hover { /*animation   */
+    color: black;
+}
+
+body { /* corps  */
+    background-color: antiquewhite;
+    height: 100vh;
+
+    
+}
+
+h1 { /* taille du h1  */
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+div { /*container pour text   */
+    gap: 20px;
+    margin-top: 20%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

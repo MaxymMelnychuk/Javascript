@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--  ce que on voit pas        -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkbox.css">
+    <title>Checkbox</title> <!--   nom du page       -->
+</head>
+<body>
+    <header> <!--    header du page       -->   
+        <a href="index.html">Tabs</a>
+        <a href="darkmode.html">Dark Mode</a> <!--  liens vers dautres pages        -->
+        <a href="checkbox.html">Formulaire</a>
+        <a href="combat.html">Sim de combat</a>
+    </header>
+    
+    <div class="container_formulaire"> <!--   container formualire        -->
+        <div class="header_formulaire"> <!--  container header du formulaire         -->
+            <h1>Formulaire</h1> <!--   text du formualire        -->
+        </div>
+            
+        <div class="container_question"> <!--    Container pour chaque question       -->
+            
+            <h2>Quelle est votre niveau d'études le plus élevé ?</h2>
+            <div class="align_content"> <!--   container pour reponses       -->
+                <input type="radio" name="études"> <!-- type radio         -->
+                <label for="Collège" class="centered_radio">Collège</label> <!--  reponse        -->
+                <input type="radio" name="études">
+                <label for="Lycée" class="centered_radio">Lycée</label>
+                <input type="radio" name="études">
+                <label for="BTS/DUT" class="centered_radio">BTS/DUT</label>
+                <input type="radio" name="études">
+                <label for="License" class="centered_radio">License</label>
+                <input type="radio" name="études">
+                <label for="Master" class="centered_radio">Master</label>
+                <input type="radio" name="études">
+                <label for="Autre" class="centered_radio">Autre</label>
+            </div>
+            
+        </div>
+
+        <div class="container_question"> <!--   meme chose       -->
+            <h2>Combien d'années d'expérience professionnelle avez-vous dans le domaine du dev web ?</h2>
+            <div class="align_content">
+                <input type="radio" name="experience">
+                <label for="Aucune" class="centered_radio">Aucune</label>
+                <input type="radio" name="experience">
+                <label for="Moins" class="centered_radio">Moins de 1 an</label>
+                <input type="radio" name="experience">
+                <label for="De" class="centered_radio">1 à 3 ans</label>
+                <input type="radio" name="experience">
+                <label for="De2" class="centered_radio">3 à 5 ans</label>
+                <input type="radio" name="experience">
+                <label for="De3" class="centered_radio">Plus de 5 ans</label>
+            </div>
+        </div>
+
+        <div class="container_question">
+            <h2>Quels langages de programmation maitrisez-vous ?</h2>
+            <div class="align_content">
+                <input type="checkbox" name="langage"> <!--  plusieurs reponses en checkbox        -->
+                <label for="HTML/CSS">HTML/CSS</label>
+                <input type="checkbox" name="langage">
+                <label for="Javascript">Javascript</label>
+                <input type="checkbox" name="langage">
+                <label for="PHP">PHP</label>
+                <input type="checkbox" name="langage">
+                <label for="Python">Python</label>
+                <input type="checkbox" name="langage">
+                <label for="Ruby">Ruby</label>
+                <input type="checkbox" name="langage">
+                <label for="Autre">Autre</label>
+            </div>
+        </div>
+
+        <div class="container_question">
+            <h2>Quels frameworks frond-end maitrisez-vous ?</h2> <!--  Question        -->
+            <div class="align_content">
+                <input type="checkbox" name="front">
+                <label for="React">React</label>
+                <input type="checkbox" name="front">
+                <label for="Angular">Angular</label>
+                <input type="checkbox" name="front">
+                <label for="Vue.js">Vue.js</label>
+                <input type="checkbox" name="front">
+                <label for="Bootstrap">Bootstrap</label>
+                <input type="checkbox" name="front">
+                <label for="Autre">Autre</label>
+            </div>
+        </div>
+
+        <div class="container_question">
+            <h2>Quels frameworks back-end avez-vous utilisés ?</h2>
+            <div class="align_content">
+                <input type="checkbox" name="back">
+                <label for="Node.js">Node.js</label>
+                <input type="checkbox" name="back">
+                <label for="Django">Django</label>
+                <input type="checkbox" name="back">
+                <label for="Lavarel">Lavarel</label>
+                <input type="checkbox" name="back">
+                <label for="Symfony">Symfony</label>
+                <input type="checkbox" name="back">
+                <label for="Autre">Autre</label>
+            </div>
+        </div>
+
+        <div class="container_question">
+            <h2>Quelles bases de données maitrisez-vous ?</h2>
+            <div class="align_content">
+                <input type="checkbox" name="database">
+                <label for="MySQL">MySQL</label>
+                <input type="checkbox" name="database">
+                <label for="PostgreSQL">PostgreSQL</label>
+                <input type="checkbox" name="database">
+                <label for="Firebase">Firebase</label>
+                <input type="checkbox" name="database">
+                <label for="Autre">Autre</label>
+            </div>
+        </div>
+
+        <div class="container_question">
+            <h2>Avez-vous déjà réalisé un site web complet ?</h2>
+            <div class="align_content">
+                <input type="radio" name="web">
+                <label for="Oui" class="centered_radio">Oui</label>
+                <input type="radio" name="web">
+                <label for="Non" class="centered_radio">Non</label>
+            </div>
+        </div>
+
+        <!--   derniere question et button       -->
+        <label for="button" class="last_question">Souhaitez-vous ajouter des précisions sur vos compétences, vos expériences ou votre motivation ?</label>
+        <textarea name="button" id="button" rows="5" cols="3" placeholder="Experience..."></textarea>
+        
+        <div class="container_button"> <!--    container button      -->
+            <button class="button"><a href="form.html" class="link_button">Continuer inscription</a></button> <!--button avec lien vers prochaine page          -->
+        </div>
+        
+        <script src="checkbox.js" ></script> 
+     
+    </div>
+    
+</body> <!--  fin du corps du page        -->
+</html>

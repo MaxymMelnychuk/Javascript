@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tabs</title> <!-- nom du page     -->
+</head>
+<body>
+
+    <header> <!--  Header du page    -->
+        <a href="index.html">Tabs</a>
+        <a href="darkmode.html">Dark Mode</a>
+        <a href="checkbox.html">Formulaire</a>
+        <a href="combat.html">Sim de combat</a>
+    </header>
+    
+    <div class="container_tabs"> <!--  Container du tabs    -->
+        <ul> <!--  Tabs menu    -->
+            <li class="tab tab-menu1 tab-active" >Menu 1</li>
+            <li class="tab tab-menu2">Menu 2</li>
+            <li class="tab tab-menu3">Menu 3</li>
+        </ul>
+        
+        <div class="container_text"> <!-- Container  principal avec text et image      -->
+            <div class="container_information"> <!--  Container pour chaque chaque type de planete    -->
+                <img src="images_de_site\mars.png" alt="" class="content active img1" width="350px"  > <!-- image     -->
+                <div class="content menu1 active" ><strong>Nom de la planète : Mars</strong>  <br><br>  Description : Mars est la quatrième planète du système solaire, surnommée "la planète rouge" à cause de sa couleur due à la rouille sur sa surface. Elle possède de grands volcans comme Olympus Mons et des canyons profonds comme Valles Marineris. L'atmosphère de Mars est mince et composée principalement de dioxyde de carbone. Malgré son climat froid et sec, des indices montrent qu'il y a eu de l'eau liquide par le passé. Mars est un objectif majeur pour l'exploration spatiale et pourrait un jour accueillir des missions humaines.</div>
+            </div> <!--  Differents contenu du image    -->
+           
+            <div class="container_information">
+                <div class="content menu2"><strong>Nom de la planète : Venus</strong> <br><br> Description : Vénus est la deuxième planète du système solaire, souvent appelée "sœur jumelle" de la Terre en raison de sa taille et de sa composition similaires. Cependant, son atmosphère dense est composée principalement de dioxyde de carbone, avec des nuages d'acide sulfurique, créant un effet de serre extrême. Cela rend la température à sa surface extrêmement chaude, autour de 465°C, plus chaude que celle de Mercure, malgré sa distance plus grande du Soleil. La surface de Vénus est couverte de volcans et de plaines lisses, avec très peu de relief. L'atmosphère dense empêche l'observation directe de sa surface depuis l'espace, mais des sondes comme Magellan ont permis de cartographier la planète. </div>
+                <img src="images_de_site\Venus.png" alt="" class="content img2" width="350px">
+            </div>
+            
+            <div class="container_information">
+                <img src="images_de_site\Jupiter.png" alt="" class="content img3" width="350px">
+                <div class="content menu3"><strong>Nom de la planète : Jupiter</strong> <br><br> Description : Jupiter est la cinquième planète du système solaire et la plus grande, avec un diamètre d'environ 139 820 km. C'est une géante gazeuse, principalement composée d'hydrogène et d'hélium. Sa célèbre Grande Tache Rouge est une tempête géante qui fait rage depuis des siècles. Jupiter possède un puissant champ magnétique et au moins 79 lunes, dont les quatre grandes lunes galiléennes : Io, Europa, Ganymède et Callisto. Son atmosphère est marquée par des bandes de nuages colorés et des tempêtes. Jupiter n'a pas de surface solide, mais sa masse énorme a une influence gravitationnelle importante sur les autres objets du système solaire.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>   
+</body>
+</html>

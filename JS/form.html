@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulaires</title> <!-- nom du page   -->
+</head>
+<body> <!--corps    -->
+    <div class="message-error"> <!--  container erreur  -->
+        <ul></ul>
+    </div>
+    <div class="message-success"> <!-- container de reussite   -->
+        Formulaire envoyer!
+    </div>
+    <!--   container formulaire  -->
+    <form action="" method="POST" enctype="multipart/form-data">
+        
+        <div class="inscription_title"> <!--header inscription    -->
+            <h1>Inscription</h1> <!--  inscription  -->
+        </div>
+
+        <div class="container_input"> <!--container de ce que on va entrer -->
+            <div class="pseudo"> <!-- container pour pseudo   -->
+                <label for="pseudo" id="text_input">Pseudo</label>
+                <input type="text" name="pseudo" id="pseudo"> <!-- input pseudo   -->
+            </div>
+
+            <div class="email"> <!--   container email -->
+                <label for="email" id="text_input">Email</label>
+                <input type="email" name="email" id="email"> <!-- input email   -->
+            </div>
+
+            <div class="password">
+                <label for="password" id="text_input">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="confirm">
+                <label for="password2" id="text_input">Entrer a nouveau votre mot de passe</label>
+                <input type="password" name="password2" id="password2">
+            </div>
+        </div>
+        
+        <div class="container_button"> <!-- Container button   -->
+            <button type="submit">S'inscrire</button> <!-- button inscrire   -->
+        </div>
+    
+    </form> <!-- fin du form   -->
+    
+    <script src="form.js" ></script>
+</body>
+</html>
